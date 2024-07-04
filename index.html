@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color:rgb(31, 99, 202);">
+    <header>
+        <nav>
+            <div class="logo"><img src="images/dribbble-removebg-preview.png" alt="" width="140px" ></div>
+            <ul>
+                
+                <li><button><a style="display: inline-block;padding: 10px 20px;background-color:rgb(31, 99, 202);color: white;text-align: none;border:solid; border-collapse: collapse;" href="signup.html">Login</a></button></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1 style="color: black;">Discover the world’s top designers & creatives</h1>
+            <p style="color: black;">Dribbble is the leading destination to find & showcase creative work and home to the world's best design professionals.</p>
+            <a href="signup.html" class="cta">Sign up</a>
+        </div>
+    </header>
+
+    <!-- First Gallery -->
+    <section class="gallery-section">
+        <button class="gallery-nav prev" onclick="scrollGallery('gallery1', -200)"><i class="bi bi-caret-left-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg></button> 
+        <div class="gallery" id="gallery1">
+            <div class="gallery-item"><img src="./images/image7.png" alt="Image 7"></div>
+            <div class="gallery-item"><img src="./images/image8.png" alt="Image 8"></div>
+            <div class="gallery-item"><img src="./images/image1.png" alt="Image 1"></div>
+            <div class="gallery-item"><img src="./images/image2.jpg" alt="Image 2"></div>
+            <div class="gallery-item"><img src="./images/image3.png" alt="Image 3"></div>
+            <div class="gallery-item"><img src="./images/image4.png" alt="Image 4"></div>
+            <div class="gallery-item"><img src="./images/image5.png" alt="Image 5"></div>
+            <div class="gallery-item"><img src="./images/image6.jpg" alt="Image 6"></div>
+        </div>
+        <button class="gallery-nav next" onclick="scrollGallery('gallery1', 200)"><i class="bi bi-caret-right-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg></button>
+    </section>
+
+    <!-- User Profiles -->
+    <section class="profiles">
+        <div class="profile-grid">
+
+            <div class="profile-item">
+                <img src="./images/profile1.webp" alt="User 1" class="profile-pic">
+                <p class="profile-name">User 1</p>
+            </div>
+            <!-- Repeat similar profile-item divs for other users up to 49 items (7 rows * 7 columns) -->
+            <!-- Example for 2nd user -->
+            <div class="profile-item">
+                <img src="./images/profile2.webp" alt="User 2" class="profile-pic">
+                <p class="profile-name">User 2</p>
+            </div>
+            <!-- Add more profile items here -->
+            <div class="profile-item">
+                <img src="./images/profile3.webp" alt="User 3" class="profile-pic">
+                <p class="profile-name">User 3</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile4.webp" alt="User 4" class="profile-pic">
+                <p class="profile-name">User 4</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile5.png" alt="User 5" class="profile-pic">
+                <p class="profile-name">User 5</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile6.png" alt="User 6" class="profile-pic">
+                <p class="profile-name">User 6</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile7.webp" alt="User 7" class="profile-pic">
+                <p class="profile-name">User 7</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile8.webp" alt="User 8" class="profile-pic">
+                <p class="profile-name">User 8</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile9.webp" alt="User 9" class="profile-pic">
+                <p class="profile-name">User 9</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile10.webp" alt="User 10" class="profile-pic">
+                <p class="profile-name">User 10</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile11.webp" alt="User 11" class="profile-pic">
+                <p class="profile-name">User 11</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile12.jpg" alt="User 12" class="profile-pic">
+                <p class="profile-name">User 12</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile13.png" alt="User 13" class="profile-pic">
+                <p class="profile-name">User 13</p>
+            </div>
+
+            <div class="profile-item">
+                <img src="./images/profile14.png" alt="User 14" class="profile-pic">
+                <p class="profile-name">User 14</p>
+            </div>
+    </section>
+
+    <!-- Second Gallery -->
+    <section class="gallery-section">
+        <button class="gallery-nav prev" onclick="scrollGallery('gallery2', -200)"><i class="bi bi-caret-left-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+          </svg></button>
+        <div class="gallery" id="gallery2">
+            
+            <div class="gallery-item"><img src="./images/image9.png" alt="Image 9"></div>
+            <div class="gallery-item"><img src="./images/image10.jpg" alt="Image 10"></div>
+            <div class="gallery-item"><img src="./images/image11.jpg" alt="Image 11"></div>
+            <div class="gallery-item"><img src="./images/image12.jpg" alt="Image 12"></div>
+            <div class="gallery-item"><img src="./images/image13.jpg" alt="Image 13"></div>
+            <div class="gallery-item"><img src="./images/image14.jpg" alt="Image 14"></div>
+            <div class="gallery-item"><img src="./images/image15.jpg" alt="Image 15"></div>
+        </div>
+        <button class="gallery-nav next" onclick="scrollGallery('gallery2', 200)"><i class="bi bi-caret-right-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+          </svg></button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dribbble Clone. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
